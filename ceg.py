@@ -55,15 +55,15 @@ addr=input("please enter the street address: ") # first three letters of street 
 if os.path.isfile("./emaillist.txt"):
     delyn=input("file already exists. Would you like to delete the file? type y or n: ")
     while True:
-        if delyn=='y':
+        if delyn.startswith('y'):
             os.remove("./emaillist.txt")
             break
-        elif delyn=='Y':
+        elif dely.startswith('Y'):
             os.remove("./emaillist.txt")
             break
-        elif delyn=='n':
+        elif delyn.startswith('n'):
             sys.exit(0)
-        elif delyn=='N':
+        elif delyn.startswith('N'):
             sys.exit(0)
         else:
             print("please enter y or n")
